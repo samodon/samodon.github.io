@@ -462,15 +462,16 @@ display: flex;
   .site-nav.dark a {
     color: var(--text-color); }
   .site-nav.dark .site-navigation .site-menu > li > a {
-    color: rgba(0, 0, 0, 0.5); }
+
+    color: var(--text-color); }
     .site-nav.dark .site-navigation .site-menu > li > a:hover {
       color: #000000; }
   .site-nav.dark .site-navigation .site-menu > li.active > a {
-    color: #000000; }
+    color: var(--text-color); }
   .site-nav.dark .site-navigation .site-menu > li.has-children.dropdown:hover > a, .site-nav.dark .site-navigation .site-menu > li.has-children.dropdown:focus > a, .site-nav.dark .site-navigation .site-menu > li.has-children.dropdown:active > a {
-    color: #0389ff; }
+    color: var(--text-color); }
   .site-nav.dark .site-navigation .site-menu > li.has-children:hover > a, .site-nav.dark .site-navigation .site-menu > li.has-children:focus > a, .site-nav.dark .site-navigation .site-menu > li.has-children:active > a {
-    color: #000000; }
+    color: var(--text-color); }
 
 .site-mobile-menu-close {
   display: block;
@@ -672,6 +673,7 @@ display: flex;
   width: 28px;
   height: 32px;
   cursor: pointer;
+  color: var(--text-color) !important;
   position: relative; }
   .burger.light:before, .burger.light span, .burger.light:after {
     background: #ffffff; }
@@ -680,7 +682,8 @@ display: flex;
   width: 100%;
   height: 2px;
   display: block;
-  background: #000;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   border-radius: 2px;
   position: absolute;
   opacity: 1; }
@@ -698,7 +701,9 @@ display: flex;
   top: 4px; }
 
 .burger span {
-  top: 15px; }
+  color: var(--text-color) !important;
+  top: 15px; 
+}
 
 .burger:after {
   top: 26px; }
@@ -1266,17 +1271,17 @@ figure.dotted-bg {
     border-right: 1px dashed var(--lines-color); }
 
 .theme-toggle-btn {
-  background-color: #fff;
   border:none;
+  background: none;
   border-radius: 50%;
-  width: 20px;justify-content: space-between;
-  height: 20px;
+  width: 40px;
+  justify-content: space-between;
+  height: 40px;
   display: flex;
  margin-left: auto;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.3s;
 }
 
